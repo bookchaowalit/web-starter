@@ -6,3 +6,7 @@
 coverage
 node_modules
 out
+
+# Storybook
+storybook-static/
+*storybook.log
