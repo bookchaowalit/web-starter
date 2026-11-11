@@ -28,6 +28,11 @@ npm install
 npm run dev
 ```
 
+## Legal kit (privacy, terms, footer)
+
+`/privacy` และ `/terms` สร้างจาก `lib/legal.ts` (PDPA: ผู้ควบคุมข้อมูล ข้อมูลที่เก็บ วัตถุประสงค์และฐานกฎหมาย ผู้รับข้อมูลและการส่งไปต่างประเทศ ระยะเวลาเก็บ สิทธิ ความปลอดภัย) และทุกหน้าจบด้วย `app/site-footer.tsx` (ความเป็นส่วนตัว · ข้อกำหนด · สถานะระบบ · ติดต่อ)
+แอปที่มีอยู่แล้ว: copy `lib/legal.ts`, `app/legal-page.tsx`, `app/privacy/`, `app/terms/`, `app/site-footer.tsx` และ `tests/legal.test.tsx` เข้าไป แล้วแก้ค่า `legal` (ข้อมูลที่เก็บ ผู้รับข้อมูล `paid`) ให้ตรงกับแอป ข้อความเป็น baseline ภาษาง่าย ไม่ใช่คำแนะนำทางกฎหมาย เจ้าของต้อง sign off ถ้อยคำ
+
 ## Checks (เหมือน CI)
 
 ```bash

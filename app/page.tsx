@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { features, site } from '@/lib/site';
+import SiteFooter from './site-footer';
 
 // Replace this page with the app's own content; keep one <main id="main-content"> per page
 // so the skip link has a target.
@@ -42,6 +43,7 @@ export default function Home() {
           </ul>
         </section>
       </main>
+      <SiteFooter />
     </>
   );
 }
