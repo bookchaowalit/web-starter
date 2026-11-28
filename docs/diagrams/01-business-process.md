@@ -49,8 +49,8 @@ Sources: `README.md` §Start a new app, §Legal kit, §Checks, `.github/workflow
 
 | ID | As-Is → To-Be | Status | Owner | Evidence |
 |---|---|---|---|---|
-| G1 | ไม่มี To-Be ที่เขียนไว้สำหรับตัว starter (เช่น เวอร์ชัน workflow ที่ต้อง pin, ขั้น deploy-smoke, legal sign-off) → owner กำหนด To-Be | decide | owner | `PRODUCT.md` (แม่แบบ); ไม่มี `specs/` หรือ `docs/adr/` |
-| G2 | Vercel deploy เมื่อ push โดยไม่รอ CI → ให้ production deploy รอ `ci.yml` ผ่านหรือไม่ (เช่น ตั้งให้ Vercel รอ check) | decide | owner | `README.md:24`; `.github/workflows/ci.yml` ไม่มีขั้น deploy หรือ gate |
+| G1 | ไม่มี To-Be ที่เขียนไว้สำหรับตัว starter (เช่น เวอร์ชัน workflow ที่ต้อง pin, ขั้น deploy-smoke, legal sign-off) → owner กำหนด To-Be; owner ตัดสิน 2026-11-28: claude ร่าง To-Be (pin reusable CI ที่ v1.6.6, ขั้น deploy-smoke, design floor 12/12) แล้ว owner อนุมัติ | todo | claude | `PRODUCT.md` (แม่แบบ); ไม่มี `specs/` หรือ `docs/adr/` |
+| G2 | Vercel deploy เมื่อ push โดยไม่รอ CI → ให้ production deploy รอ `ci.yml` ผ่านหรือไม่ (เช่น ตั้งให้ Vercel รอ check); owner ตัดสิน 2026-11-28: ใช่ เฉพาะ template (แอปเดิมไม่เปลี่ยน): ใช้ `deploy-vercel.yml` ของ platform-ci-workflows (G1 ที่นั่น) ให้ deploy หลัง `ci.yml` ผ่าน | todo | claude | `README.md:24`; `.github/workflows/ci.yml` ไม่มีขั้น deploy หรือ gate |
 
 ## Open questions
 
